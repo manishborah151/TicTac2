@@ -1,6 +1,6 @@
 export const playSound = (type) => {
   const sounds = {
-    click: new Audio('./click.mp3'),
+    click: new Audio('./public/sounds/click.mp3'),
     win: new Audio('./win.mp3'),
     draw: new Audio('./draw.mp3'),
   };
