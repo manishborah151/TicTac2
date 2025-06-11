@@ -1,0 +1,14 @@
+.highlight {
+  border: 2px solid #ff6600;
+  background-color: #fff4e6;
+  animation: pulse 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}

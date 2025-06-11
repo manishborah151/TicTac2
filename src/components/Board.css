@@ -1,0 +1,45 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px); /* Fixed size */
+  grid-template-rows: repeat(3, 100px);
+
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  /* existing styles */
+  width: 80px;
+  height: 80px;
+
+  cursor: pointer;
+  border: 2px solid #333;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Animation for X and O */
+@keyframes popIn {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-symbol {
+  animation: popIn 0.3s ease forwards;
+}
